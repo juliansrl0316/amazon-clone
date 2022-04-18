@@ -12,7 +12,7 @@ import { selectItems } from "../slices/basketSlice";
 function Header(props) {
   const { data: session } = useSession();
   const router = useRouter();
-  const items = useSelector(selectItems)
+  const items = useSelector(selectItems);
 
   return (
     <div>
@@ -42,12 +42,15 @@ function Header(props) {
             <p className="font-extrabold md:text-sm">Account & Lists</p>
           </div>
 
-          <div className="link">
+          <div className="link" onClick={() => router.push("/orders")}>
             <p>Return</p>
             <p className="font-extrabold md:text-sm">& Orders</p>
           </div>
 
-          <div onClick={() => router.push("/checkout")} className="relative link flex items-center">
+          <div
+            onClick={() => router.push("/checkout")}
+            className="relative link flex items-center"
+          >
             <span className="absolute top-0 right-0 md:right-10 h-4 w-4 bg-yellow-400 text-center rounded-full text-black  font-bold">
               {items.length}
             </span>
