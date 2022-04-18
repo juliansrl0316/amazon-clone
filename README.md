@@ -4,7 +4,6 @@ This is an amazon clone, i made it for the purpose of practicing React, you can 
 This is the tutorial with which I did the practice:
 - https://www.youtube.com/watch?v=oq0B7XUNbtk&list=PLf16UKl7nR5AF9k4ckTG82onvpAv1NAE7&index=1
 
-# Installation Steps
 
 
 # Installation Steps
