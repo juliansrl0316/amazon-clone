@@ -48,9 +48,7 @@ export async function getServerSideProps(context) {
 
   const session = await getSession(context);
 
-  if (!session) {
-    return { props: {} };
-  }
+  if (!session) return { props: {} };
 
   const stripeOrders = await db
     .collection("users")
@@ -78,5 +76,5 @@ export async function getServerSideProps(context) {
     props: {
       orders,
     },
-  };
+  }; 
 }
